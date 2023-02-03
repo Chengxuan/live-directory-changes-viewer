@@ -26,6 +26,7 @@ const App: React.FC = () => {
       {directoryInfo ? (
         <Directory
           name={directoryInfo.name}
+          type={directoryInfo.type}
           children={directoryInfo.children}
         ></Directory>
       ) : (
