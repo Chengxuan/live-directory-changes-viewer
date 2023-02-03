@@ -28,6 +28,6 @@ npm start
 The following script opens two new terminals to build and run UI & server simultaneously:
 ```bash
 export ws_root_dir=$(pwd)
-osascript -e "tell application \"Terminal\" to do script \"cd $ws_root_dir/server && npm i && npm start\""
+osascript -e "tell application \"Terminal\" to do script \"cd $ws_root_dir/server && export WATCH_DIR=path_to_the_directory && npm i && npm start\""
 osascript -e "tell application \"Terminal\" to do script \"cd $ws_root_dir/client && npm i && npm start\""
 ```
